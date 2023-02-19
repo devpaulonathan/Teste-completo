@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'passione';
+    src: url('../fontes/PassionOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'sriracha';
+    src: url('../fontes/Sriracha-Regular.ttf');
+    
+}
+
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-passio: 'passione';
+    --fonte-srira:'sriracha';
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte-padrao) ;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: var(--fonte-passio);
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 10vw;
+    font-weight: normal;
+}
+header p {
+    padding-bottom: 50px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 10px;
+        
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+   
+    
+    
+}
+nav a:hover {
+    color: rgb(233, 228, 219);
+    background-color: rgba(169, 169, 169, 0.329);
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte-srira);
+    font-size: 3.2vw;
+}
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.288);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+section.imagem{
+    background-color: rgba(46, 46, 46, 0.726);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    background-attachment: fixed;
+
+}
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
